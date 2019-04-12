@@ -1,0 +1,13 @@
+package com.mas.micronaut.controller;
+
+import io.micronaut.http.annotation.Controller;
+import io.micronaut.http.annotation.Get;
+
+@Controller("/api")
+public class APIController {
+    @Get("/internal")
+    String getInternal() {
+      System.out.println("List of APIs registered in Internal");
+        return "success";
+    }    
+}
